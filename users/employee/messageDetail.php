@@ -1,0 +1,107 @@
+<script type="text/javascript" src="<?php echo URL_VIEW;?>js/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="<?php echo URL_VIEW;?>js/jquery.ui.js"></script>
+<script src="<?php echo URL_VIEW;?>js/jquery.colorbox.js"></script>
+<link rel="stylesheet" href="<?php echo URL_VIEW;?>styles/colorbox.css" />
+<?php
+	$message_type = $_GET['type'];
+	$message_id = $_GET['message_id']; 
+	
+	$messageDetail = getMessageDetail($message_id);
+	//echo "<pre>";
+	//print_r($messageDetail);
+if(isset($_POST['submit']) && $_POST['submit'] == 'Send'){
+		$url = URL."Messages/add.json";
+		$response = \Httpful\Request::put($url)                  // Build a PUT request...
+    		->sendsJson()                               // tell it we're sending (Content-Type) JSON...
+    		//->authenticateWith('username', 'password')  // authenticate with basic auth...
+    		->body($_POST['data'])             // attach a body/payload...
+    ->send();	
+		if($response->body->output == 1){
+			?>
+            <script type="text/javascript">
+				$(document).ready(function()
+					{
+						var top_an = $("#save_success").css('top');
+						$("#save_success").css('top','0px');
+			
+						
+							$("#save_success").show().animate({top:top_an});
+							
+							setTimeout(function()
+								{
+									$("#save_success").fadeOut();
+								}, 3000);
+						
+					});
+			</script>
+            <?php	
+		}
+	}
+?>
+
+
+<div id="save_success">Message Send Successfully !!</div>
+<h2 class="newH2">Message Detail</h2>
+
+<div class="viewMsgContainer">
+    <div class="msgSender"><?php echo $messageDetail->UserTo->fname." ".$messageDetail->UserTo->lname;?></div>
+    
+
+    <?php $dateTime = explode(" ",$messageDetail->Message->date_time);$date = ($dateTime['0']);$time = ($dateTime['1']);?>
+    <?php $times = explode(":", $time);if($times['0'] > 12){ $meri= "pm";}else{ $meri = "am";}
+        if($times['0'] >12){$hr = $times['0']-12;}else{$hr = $times['0'];}
+    $atime = $hr.":".$times['1']." ".$meri;
+     ?>
+
+     <?php $dates = explode("-", $date);
+        $month = date("F", mktime(0, 0, 0, $dates['1'], 10));
+        $adate = ltrim($dates['2'], '0')." ".$month." ".$dates['0'];
+
+     ?>
+
+
+    <div class="msgDate"><?php echo $adate;?></div>
+    <div class="msgTime"><?php echo $atime;?></div>
+    <div class="msg"><?php echo $messageDetail->Message->content;?></div>
+</div>
+<div class="clear"></div>
+
+<?php
+if($user_id == $messageDetail->Message->to){
+?>
+    <a class='replyMessage' href="#reply">Reply</a>
+<?php } ?>
+
+<a class="backBtn" href="<?php echo URL_VIEW."users/employee/sentMessage";?>" style="color:#000">Back</a>
+
+<div style="display:none;">
+	<div id="reply">
+    <form method="post" action="">
+    <input type="hidden" name="data[Message][from]" value="<?php echo $user_id;?>">
+    <input type="hidden" name="data[Message][parent_id]" value="<?php echo $messageDetail->Message->id;?>">
+    <input type="hidden" name="data[Message][to]" value="<?php echo $messageDetail->Message->from;?>">
+		<table>
+            <tr>
+            	<td colspan="2">Message Compose</td>
+            </tr>
+            <tr>
+            	<td colspan="2">Message</td>
+            </tr>
+            <tr>
+            	<td colspan="2"><textarea name="data[Message][content]" id="messageContent"></textarea></td>
+            </tr>
+            <tr>
+            	<td colspan="2"><input type="submit" name="submit" id="submit" value="Send"></td>
+            </tr>
+    	</table>
+        </form>
+    </div>
+</div>
+
+<script>
+	$(document).ready(function(e) {
+        $(".replyMessage").colorbox({inline:true, width:"50%"});
+		
+    });
+	
+</script>

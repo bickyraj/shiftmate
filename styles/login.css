@@ -1,0 +1,183 @@
+/* CSS Document */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body
+{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+/* end reset */
+.clear { clear: both;}
+body { 
+	margin:0px; 
+	padding:0px;
+	font-family: arial;
+	font-size:12px;
+	color: rgb(153, 153, 153);
+	background-color: rgb(54, 65, 80) !important;
+}
+
+a {
+	text-decoration: none;
+    color: rgb(91, 155, 209);
+	line-height: 30px;
+}
+a:hover { text-decoration: underline;}
+/* ===== customize select arrow ==========*/
+select { 
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+select {
+	background: url(../images/drop-arrow.png) no-repeat top 11px right 7px;
+}
+h3.form-title {
+	margin: 20px 0 15px;
+}
+.login {
+	width: 400px !important
+}
+.login > .registration-form > li > input[type="text"],.login > .registration-form > li > input[type="password"]{
+	width: 100% !important;
+	height: 34px !important;
+}
+.check {
+	float: left;
+	margin: 3px 0 0 0;
+}
+/* ============== 2015 May 20 =============*/
+/* ================== Employee Registration ===========*/
+.registration-formDiv {
+
+}
+.registration-formDiv .logo {
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 15px;
+    color: #F7F9FF;
+	font-size: 28px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.registration-formDiv .content {
+	background-color: rgb(236, 238, 241);
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+	width: 500px;
+	margin: 40px auto 10px auto;
+	padding: 30px;
+	padding-top: 10px;
+	overflow: hidden;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+.registration-formDiv .content h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400 !important;
+    color: rgb(77, 179, 165);
+}
+.registration-form {
+	margin: 0px;
+	padding: 0px
+}
+.registration-form > li {
+	float: left;
+	width: 100%;
+	margin: 10px 0px 0px 0px;
+	list-style: none;
+}
+.registration-form > li:first-child {
+	margin: 0px;
+}
+.registration-form > li:last-child {
+	margin-top: 20px;
+}
+.registration-form > li label {
+	padding: 9px 0px 0px;
+	float: left;
+	color: rgb(153, 153, 153);
+	font-size: 14px;
+}
+.registration-form > li input[type="text"],.registration-form > li input[type="password"],.registration-form > li input[type="email"],.registration-form > li input[type="date"],.registration-form > li input[type="tel"],.registration-form > li select,.registration-form > li input[type="file"] {
+	height: 30px;
+	padding: 0px 0px 0px 5px;
+	float: right;
+	width: 70%;
+	background-color: rgb(221, 227, 236);
+	border-radius: 1px;
+	border: 0px none;
+	color: rgb(153, 153, 153);
+}
+.registration-form > li input[type="submit"],.login input[type="submit"] {
+	color: rgb(255, 255, 255);
+    background-color: rgb(69, 182, 175);
+    border-color: rgb(62, 164, 157);
+    float: right;
+	padding:8px 15px;
+	font-size: 14px;
+	border: none;
+}
+.registration-form > li input[type="submit"]:hover,.login input[type="submit"]:hover {
+	background-color: rgb(59, 156, 150);
+    border-color: rgb(48, 127, 122);
+}
+.registration-form > li input[type="text"]:focus,.registration-form > li input[type="password"]:focus,.registration-form > li input[type="email"]:focus,.registration-form > li input[type="date"]:focus,.registration-form > li input[type="tel"]:focus,.registration-form > li select:focus {
+    border: 1px solid rgb(195, 204, 218);
+}

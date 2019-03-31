@@ -1,0 +1,562 @@
+body
+{
+	margin:0px;
+	padding: 0px;
+
+}
+.leftbar
+{
+	height: 100vh;
+	background-color: #eeeeee;
+}
+.ksidebar
+{
+	padding-top: 0px !important;
+	height: 100%;
+
+}
+.sidebarKs
+{
+	background-color: #eeeeee;
+	height: 600px;
+	padding: 0px !important;
+}
+.dialouge
+{
+	width: 1240px !important;
+}
+.navUl
+{
+	padding: 0px !important;
+	/*margin: 0px !important;*/
+	height: 100%;
+
+}
+.userLi img
+{
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+.userLi
+{
+	color: #999999;
+	background-color: #eeeeee;
+	font-size: 15px;
+	padding: 34px;
+	border-bottom: 1px solid #dddddd;
+
+
+}
+.navUl li
+{
+	list-style: none;
+	background-color: #eeeeee;
+	color: #606060;
+	border-bottom: 1px solid #dddddd;
+	font-size: 15px;
+	text-transform: uppercase;
+	background-size: 35px !important;
+
+}
+.navUl .active
+{
+	background-color: #dddddd !important;
+	background: url("../../images/hov.png") no-repeat top 55% right -1%;
+	font-weight: bold;
+
+}
+.navUl li:hover
+{
+	background-color: #dddddd !important;
+}
+.right-container-top 
+{
+	    overflow: hidden;
+    margin-top: 34px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font: 18px arial;
+    border-bottom: 1px solid #dddddd;
+    /* padding-bottom: 31px; */
+    /* margin-bottom: 13px; */
+    display: block;
+
+}
+/*.btn {
+
+	float: right;
+	color: #999999;
+	margin-top: -10px;
+	border-radius: 2px !important;
+	margin-right: 0px;
+}*/
+
+.editFormControl
+{
+	height: 45px !important;
+	/*width: 200px;*/
+
+}
+.profileimage
+{
+    float: left;
+    padding-right: 10px;
+}
+.changeBtn
+{
+	margin-top: 5px;
+	float: left;
+}
+.right-container-bottom 
+{
+	border-top: 1px solid #dddddd;
+	margin-top: 200px;
+	margin-left: 0px;
+	margin-right: 30px;
+
+}
+.mid-em .col-md-6
+{
+	padding-top:15px;
+}
+
+.col-md-6 .time
+{
+	
+	
+}
+.col-md-6 .btn-group
+{
+	
+	padding-top: 15px;
+	border-radius: 2px;
+	
+}
+
+
+.lineBreak
+{
+	margin: 30px 0;
+border: 0;
+border-top: 1px solid #dddddd !important;
+border-bottom: 0;
+}
+.topGroup
+{
+	padding-top: 15px;
+}
+.accessHide
+{
+	margin-left: 15px;
+	margin-top: 85px;
+}
+.learnMore
+{
+	color:#45b6af;
+}
+.hideCheckBox
+{
+	margin-left: -11px !important;
+}
+.radioList li
+{
+	float: left;
+	list-style: none;
+}
+.radioList
+{
+	margin-left: -30px;
+}
+.time 
+{
+	margin-left: -3px;
+}
+.col-md-9 .saveEmployee .changeBtn
+{
+	float: right;
+}
+.foot
+{
+	padding-bottom: 20px;
+}
+.navUl li a
+{
+	display:block;
+	text-decoration: none;
+	padding: 21px;
+	 
+
+}
+/*.btn-success {
+    background-color: #20e052;
+    
+}*/
+.radio-btn
+{
+	padding-left: 15px;
+}
+.timeDrop
+{
+	width: 400px;
+	height: 45px;
+}
+.timeDropDown
+{
+	width: 30px;
+	height:45px;
+}
+
+.modalCustom
+{
+	overflow: hidden;
+}
+
+.modalOuter
+{
+	    width: 1267px !important;
+}
+.verticalLine
+{
+	border-right: 1px dashed #eeeeee;
+	float: left;
+	
+	 
+}
+.verticalLine label{
+	float: left;
+}
+.topGroup .positionDrop
+{
+	width: 425px;
+	height: 45px;
+	padding-top: 15px;
+	padding-left: 0px !important;
+	margin-left: -70px;
+}
+.topGroup .locationDrop
+{
+	width: 425px;
+	height: 45px;
+	padding-top: 15px;
+	padding-left: 0px !important;
+	
+}
+.locationDropBtn
+{
+	margin-top: -25px;
+	margin-left: 20px;
+}
+.locationText
+{
+	margin-left: 20px;
+}
+.CandyBar
+{
+}
+
+.all-clr
+{
+	margin-right: 15px;
+}
+.allClrBtn
+{
+	margin-top: 15px;
+	margin-left: 28% !important;
+}
+.baseHour
+{
+	
+   padding: 15px;
+    height: 60px;
+    width: 100%;
+    font-size: 28px;
+}
+.padZero
+{
+	padding: 0px !important;
+	margin: 0px !important;
+}
+.hourlyCleaning
+{
+	background: #1E1EB3;
+	color: #ffffff;
+	height: 60px;
+	width: 100%;
+	margin-top: 25px;
+	border: 1px solid #505050;
+	padding: 15px;
+    font-size: 28px;
+}
+.exempt
+{
+	padding-top: 40px;
+}
+.allow
+{
+	margin-left: 28px;
+}
+.visible
+{
+	font-size: 12px;
+	
+}
+.logInput
+{
+	height: 300px;
+	width:100%;
+
+}
+.maxHours
+{
+	width: 30px;
+}
+.questionMark
+{
+	color: rgb(153, 152, 152);
+	margin-left: 5px;
+}
+
+.closeBtn
+{
+	    display: block;
+    float: right;
+    margin-top: -6px;
+}
+
+.editEmpProf .tab-pane
+{
+	margin-bottom: 28px;
+	overflow: hidden;
+}
+
+span.datetime {
+    font-size: 11px;
+    color: #777777;
+}
+
+.sideNotifyDivC
+{
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #FDFDFD;
+    border: 1px solid whitesmoke;
+}
+
+.editProfileDiv
+{
+	border-left: 1px solid #eee;
+}
+.editProfileDiv label
+{
+	color:#9A9A9A !important;
+}
+
+.myProfFRow .col-md-4
+{
+	border-right: 1px solid #eee;
+}
+.myProfFRow .col-md-4:last-child
+{
+	border-right: none;
+}
+
+.myProfFRow .col-md-4 p
+{
+	color: #9A9A9A; 
+}
+
+.myProfFRow > .col-md-4 > .portlet > .portlet-title > .caption > i
+{
+	color: #A0A0A0;
+	font-size: 21px;
+    margin-right: 7px;
+}
+.myProfFRow > .col-md-4 > .portlet > .portlet-title > .caption
+{
+	text-transform: uppercase;
+}
+
+.socialDiv .portlet p
+{
+	font-size: 12px;
+}
+.socialDiv > .col-md-12 > .portlet > .portlet-title > .caption > i
+{
+	color:#3a5795;
+    font-size: 19px;
+}
+
+.listBoardAction
+{
+	width: 80px;
+}
+.listBoardAction a{
+	margin-left: 5px;
+}
+
+.overviewRow > div
+{
+	border-right: 1px solid #eeeeee;
+}
+.overviewRow div:last-child
+{
+	border-right: none;
+}
+
+.shiftWell
+{
+    border-radius: 8px !important;
+    border: 8px solid #96B997 !important;
+	padding:10px !important;
+    /* overflow-y: scroll; */
+    background-color: #fafcfb !important;
+}
+
+.calendarEventBox
+{
+	color: #4C4C4C !important;
+    border-radius: 3px !important;
+    background-color: #ECECEC !important;
+    border: 2px solid rgb(185, 185, 185) !important;
+}
+
+.triTop
+{
+	right: 0px;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    /*border-top: 7px solid #4db3a4;*/
+    border-bottom: 9px solid transparent;
+    /*border-right: 7px solid #4db3a4;*/
+    position: absolute;
+}
+
+.fcTimeAlign
+{
+	display: block;
+	text-align: center;
+}
+
+.eventImage
+{
+    left: 4px;
+    position: absolute;
+    top: 13px;
+    height: 15px !important;
+    width: 15px !important;
+}
+
+.eventTitle
+{
+	display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.calLabelImg
+{
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+.headerImg
+{
+    height: 30px !important;
+    width: 40px;
+    margin-top: 0px !important;
+}
+
+.shnav-tabs > li{
+	float: right !important;
+}
+
+.empCalShiftTime
+{
+	 color: #383838; font-size: 12px; font-weight: 700; padding: 3px;
+}
+
+.empCalShiftTitle
+{
+	color: #696969; font-size: 12px; font-weight: 600; padding: 4px;
+}
+
+.empCalShiftStat
+{
+    height: 20px;
+    position: absolute;
+    right: 6px;
+    top: 15px;
+    width: 20px;
+}
+
+.organizationHolidayBox
+{
+    /*background-color: #EF5151 !important;*/
+    border: none !important;
+    color: white !important;
+    text-align: center;
+    padding: 5px !important;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.orgDragShift
+{
+	opacity: .9;
+    font-size: 12px !important;
+    cursor: move;
+    color: #151313 !important;
+    background-color: #FFFFFF !important;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 1px !important;
+    border: 1px solid #A0A0A0 !important;
+    transition:border linear .2s;
+    -webkit-transition:border linear .2s;
+	-o-transition:border linear .2s;
+}
+
+.orgDragShift:hover > div
+{
+	transition:color linear .2s;
+    -webkit-transition:color linear .2s;
+}
+.orgDragShift:hover > div:first-child
+{
+	color: #4DB3A2;
+}
+
+.orgDragShift:hover
+{
+    border: 1px solid #4DB3A2 !important;
+}
+
+.stick {
+    margin-top: 0 !important;
+    position: fixed;
+    top: 15px;
+    margin-right: 15px;
+    /*z-index: 10000;*/
+}
+
+.orgCalAccord:focus
+{
+	text-decoration: none;
+}
+
+.noticeOrgDiv
+{
+	height:260px; 
+	overflow:hidden;
+}
+

@@ -1,0 +1,5 @@
+config.php
+config1.php
+.htaccess
+.idea/*
+/nbproject/private/

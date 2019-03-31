@@ -1,0 +1,237 @@
+p@charset "utf-8";
+/* CSS Document */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body
+{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+/* end reset */
+.clear { clear: both;}
+body { 
+	/*background-color:#212121; */
+	margin:0px; 
+	padding:0px;
+	color: #ffffff;
+	font-family: arial;
+	font-size:12px;
+	background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #1e5799 0%, #207cca 41%, #207cca 41%, #2989d8 44%, #7db9e8 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#1e5799), color-stop(41%,#207cca), color-stop(41%,#207cca), color-stop(44%,#2989d8), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  #1e5799 0%,#207cca 41%,#207cca 41%,#2989d8 44%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  #1e5799 0%,#207cca 41%,#207cca 41%,#2989d8 44%,#7db9e8 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  #1e5799 0%,#207cca 41%,#207cca 41%,#2989d8 44%,#7db9e8 100%); /* IE10+ */
+background: linear-gradient(135deg,  #1e5799 0%,#207cca 41%,#207cca 41%,#2989d8 44%,#7db9e8 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+	line-height: 30px;
+}
+a:hover { text-decoration: underline;}
+/*
+.logoHeader { 
+	color: #ffffff;
+	font-size: 30px;
+	height: 100px;
+	line-height: 200px;
+	text-align: center;
+}*/
+
+.logoText { 
+	line-height: 0px;
+	background: #168ffa;
+	padding: 5px 10px;
+}
+
+.loginBg {
+	background:#133C65;
+	width: 400px;
+	height: 370px;
+	border-radius: 5px;
+	margin: 150px auto;
+	padding: 0 2%;
+	margin-bottom: 145px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	opacity: .8;
+}
+.loginHeader {
+	text-align:center;
+	color: #f7f9ff;
+	font-size: 32px;
+	padding: 40px 0 20px;
+	border-bottom: 2px solid #3A5975;
+}
+
+.loginBg ul { 
+	margin: 10px 0 20px; 
+	padding: 0px;
+}
+.loginBg ul li label { 
+
+	text-transform: uppercase;
+	font-size: 14px;
+	float: left;
+	margin: 10px 0;
+}
+
+.loginBg ul li input[type="text"],.loginBg ul li input[type="password"] { 
+	height: 35px;
+	padding: 0 10px;
+	float: left;
+	width: 100%;
+	margin-bottom:15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	border-radius: 3px;
+	border: none;
+}
+.loginBg ul li input[type="checkbox"]{
+	float: left;
+	margin: 0px;
+}
+
+.check{ 
+	float: left; 
+	margin: 0px 0 0 10px;
+}
+
+.loginBg input[type='submit'],.registration-form > li input[type="submit"] { 
+	float: right;
+	padding:5px 15px;
+	font-size: 14px;
+	color: #ffffff;
+	border:1px solid #91cd5b;
+	background: -moz-linear-gradient(bottom, #3b9706 0%, #91cd5b 100%);
+	background: -ms-linear-gradient(bottom, #3b9706 0%, #91cd5b 100%);
+	background: -o-linear-gradient(bottom, #3b9706 0%, #91cd5b 100%);
+	background: -webkit-linear-gradient(bottom, #3b9706 0%, #91cd5b 100%);
+	background: linear-gradient(bottom, #3b9706 0%, #91cd5b 100%);
+}
+
+.loginBg input[type='submit']:hover,.registration-form > li input[type="submit"]:hover { 
+	cursor: pointer;
+	background: #409d06;
+}
+
+/* ============== 2015 May 20 =============*/
+/* ================== Employee Registration ===========*/
+.registration-formDiv {
+
+}
+.registration-formDiv .logo {
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 15px;
+    color: #F7F9FF;
+	font-size: 28px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.registration-formDiv .content {
+	background: #133C65;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-o-border-radius: 7px;
+	border-radius: 7px;
+	width: 400px;
+	margin: 40px auto 10px auto;
+	padding: 30px;
+	padding-top: 10px;
+	overflow: hidden;
+	position: relative;
+	opacity: .8;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+.registration-formDiv .content h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400 !important;
+	color: #F7F9FF;
+}
+.registration-form {
+	margin: 0px;
+	padding: 0px
+}
+.registration-form > li {
+	float: left;
+	width: 100%;
+	margin: 10px 0px 0px 0px;
+	list-style: none;
+}
+.registration-form > li:first-child {
+	margin: 0px;
+}
+.registration-form > li:last-child {
+	margin-top: 20px;
+}
+.registration-form > li label {
+	padding: 9px 0px 0px;
+	float: left;
+	font-size: 14px;
+}
+.registration-form > li input[type="text"],.registration-form > li input[type="password"],.registration-form > li input[type="email"],.registration-form > li input[type="date"],.registration-form > li input[type="tel"],.registration-form > li select {
+	height: 30px;
+	padding: 0px 0px 0px 5px;
+	float: right;
+	width: 78%;
+	border-radius: 3px;
+	border: 0px none;
+}
